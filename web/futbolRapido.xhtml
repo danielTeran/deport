@@ -8,7 +8,7 @@
     <center>
     <h:form>
     <h:head>
-        <title>Atletismo</title>
+        <title>Futbol Rápido</title>
         <h:panelGrid>  
             <h:graphicImage url="Imagenes/fondoDep.png"
                             style="position: absolute; left: 440px; top: 0px; width: 860px; height: 110px"/>
@@ -56,24 +56,33 @@
         </h:panelGrid>
         
         <!--Descripción-->
-        <p:fieldset legend="Atletismo en Ciencias" style=" position: absolute; width: 430px; top: 190px; left: 200px; font-size: 20px; text-align: justify">  
-            <p:graphicImage url="/Imagenes/atletismo/clubCorredores.jpg"
-                            style="width: 430px"/>
+        <p:fieldset legend="Futbol Rápido" style=" position: absolute; width: 430px; top: 230px; left: 200px; font-size: 22px; text-align: justify">  
+            <h:outputText value="Se juega en una cancha de 42 x 22 metros, con dos tiempos de 30 minutos y un entretiempo de 15 minutos. Durante el juego los cambios son ilimitados. Tiene la particularidad que la pelota se mantiene en juego en forma permanente, debido a que rebota en una pared que rodea el perímetro de la cancha hecha de acrílico transparente incluyendo la zona detrás de los arcos."/>
         </p:fieldset>
         
+        <!--links-->
+        <p:panel id="fifra" style="position: absolute; top: 550px; left: 200px">  
+            <a href="http://www.futbolrapido.org/">FIFRA</a>
+        </p:panel>
+        <p:tooltip for="fifra" value="Federación Nacional de Futbol Rápido" showEffect="fade" hideEffect="fade" /> 
+        
+        <p:panel style="position: absolute; top: 550px; left: 310px">  
+            <a href="http://www.futbolrapido.org/">REGLAMENTO DEL JUEGO</a>
+        </p:panel>
+                
         <!--Galería-->
         <h:panelGrid style=" position: absolute; left: 730px; top: 190px">
-            <p:carousel itemStyle="height:400px;width:500px;" pageLinks="4" autoPlayInterval="4000"   
+            <p:carousel itemStyle="height:380px;width:500px;" pageLinks="5" autoPlayInterval="4000"   
                         rows="1" effect="easeInStrong" circular="true">  
-                <p:graphicImage url="/Imagenes/atletismo/atletismo2.png"
+                <p:graphicImage url="/Imagenes/futbolRapido/futbol.png"
                                 style="width: 500px"/> 
-                <p:graphicImage value="/Imagenes/atletismo/atletismo1.jpg"
+                <p:graphicImage value="/Imagenes/futbolRapido/futbolf.jpg"
                                 style="width: 500px"/>  
-                <p:graphicImage value="/Imagenes/atletismo/atletismo2.jpg"
+                <p:graphicImage value="/Imagenes/futbolRapido/futbolV.jpg"
                                 style="width: 500px"/>  
-                <p:graphicImage value="/Imagenes/atletismo/atletismo3.jpg"
+                <p:graphicImage value="/Imagenes/futbolRapido/atletismo3.jpg"
                                 style="width: 500px"/>
-                <p:graphicImage value="/Imagenes/atletismo/atletismo4.jpg"
+                <p:graphicImage value="/Imagenes/futbolRapido/atletismo4.jpg"
                                 style="width: 500px"/>
             </p:carousel>  
         </h:panelGrid>
